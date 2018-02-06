@@ -1,0 +1,9 @@
+<hr>
+<p>Proceso asincrono</p>
+<button (click)="ejecutar();"
+  [disabled]="loading"
+  class="btn btn-primary">
+  <i class="fa" [ngClass]="{'fa-save':loading, 'fa-star fa-spin':!loading }"></i>
+  <span *ngIf="!loading">Guardar</span>
+  <span *ngIf="loading">Espere por favor</span>
+</button>
