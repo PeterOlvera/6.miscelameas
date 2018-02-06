@@ -1,9 +1,19 @@
+<div [ngClass]="tipoAlerta" class="alert" role="alert">
+  This is a {{ tipoAlerta }}!
+</div>
+<div class="container-fluid">
+  <button class="btn btn-primary" (click)="tipoAlerta='alert-info'"> INFO </button>
+  <button class="btn btn-success" (click)="tipoAlerta='alert-success'"> SUCCESS </button>
+  <button class="btn btn-danger" (click)="tipoAlerta='alert-danger'"> DANGER </button>
+</div>
 <hr>
 <p>Proceso asincrono</p>
-<button (click)="ejecutar();"
-  [disabled]="loading"
-  class="btn btn-primary">
-  <i class="fa" [ngClass]="{'fa-save':loading, 'fa-star fa-spin':!loading }"></i>
+<button (click)="ejecutar()"
+  class="btn btn-primary"
+  type="button" name="button"
+  [disabled]="loading">
+
+  <i class="fa" [ngClass]="{'fa-star fa-spin': !loading, 'fa-save': loading }"></i>
   <span *ngIf="!loading">Guardar</span>
   <span *ngIf="loading">Espere por favor</span>
 </button>

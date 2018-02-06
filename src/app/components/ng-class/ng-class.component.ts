@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NgClassComponent implements OnInit {
 
 
+  tipoAlerta:string = "alert-info"
   loading:boolean = false;
+
 
   constructor() { }
 
@@ -16,7 +18,7 @@ export class NgClassComponent implements OnInit {
   }
 
   ejecutar(){
-    this.loading=true; 
+    this.loading=true;
     setTimeout( ()=> this.loading = false, 3000 );
   }
 
