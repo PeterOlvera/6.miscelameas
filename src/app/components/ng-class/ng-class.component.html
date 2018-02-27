@@ -13,7 +13,7 @@
   type="button" name="button"
   [disabled]="loading">
 
-  <i class="fa" [ngClass]="{'fa-star fa-spin': !loading, 'fa-save': loading }"></i>
+  <i class="fa" [ngClass]="{'fa-save':!loading, 'fa-star':loading}"></i>
   <span *ngIf="!loading">Guardar</span>
   <span *ngIf="loading">Espere por favor</span>
 </button>

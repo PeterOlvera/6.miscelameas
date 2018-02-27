@@ -20,6 +20,7 @@ export class NgClassComponent implements OnInit {
   ejecutar(){
     this.loading=true;
     setTimeout( ()=> this.loading = false, 3000 );
+
   }
 
 }

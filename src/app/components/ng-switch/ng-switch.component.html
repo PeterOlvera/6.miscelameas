@@ -1,0 +1,17 @@
+<!--BUTTON SWITCH-->
+<div [ngSwitch]="backgroundType">
+  <button (click)="cambiarEstilo()" *ngSwitchCase="'Primary'" type="button" class="btn btn-primary">Primary</button>
+  <button (click)="cambiarEstilo()" *ngSwitchCase="'Success'" type="button" class="btn btn-success">Success</button>
+  <button (click)="cambiarEstilo()" *ngSwitchCase="'Danger'" type="button" class="btn btn-danger">Danger</button>
+  <button (click)="cambiarEstilo()" *ngSwitchCase="'Warning'" type="button" class="btn btn-warning">Warning</button>
+  <button (click)="cambiarEstilo()" *ngSwitchDefault type="button" class="btn btn-info">Info</button>
+</div>
+<p>ngSwitch <i class="fa fa-hand-point-up fa-2x m-2 mt-1"></i> click aquí </p>
+<!--DIV SWITCH-->
+<div [ngSwitch]="backgroundType">
+  <div *ngSwitchCase="'Primary'" class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+  <div *ngSwitchCase="'Success'" class="p-3 mb-2 bg-success text-white">.bg-success</div>
+  <div *ngSwitchCase="'Danger'" class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+  <div *ngSwitchCase="'Warning'" class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+  <div *ngSwitchDefault class="p-3 mb-2 bg-info text-white">.bg-info</div>
+</div>
