@@ -17,7 +17,6 @@ export class NgSwitchComponent implements OnInit {
   cambiarEstilo(){
 
     this.opcion = Math.floor(Math.random() * (5-0));
-    console.log(this.opcion)
     switch( this.opcion ){
       case 0:
           this.backgroundType = 'Primary';
